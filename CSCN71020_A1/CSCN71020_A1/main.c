@@ -16,14 +16,14 @@ void main() {
 	printf("Enter operation number: ");
 	scanf_s("%1o", &inputNum);
 
-	if (inputNum == 1) {
+	switch (inputNum)
+	{
+	case 1:
 		add();
-	}
-	else if (inputNum == 2) {
+		break;
+	case 2:
 		subtract();
-	}
-	else {
-		printf("Invalid input. Please enter a valid operation number.\n");
+		break;
 	}
 
 }
